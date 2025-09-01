@@ -6,9 +6,9 @@
     "lint": "npx eslint ./src || exit 0",
     "lint:fix": "npm eslint ./src --fix || exit 0"
   },
-  "author": "",
+  "author": "Ebba Dahlberg",
   "license": "ISC",
-  "description": "",
+  "description": "First assignment in LNU course 1dv610",
   "devDependencies": {
     "@lnu/eslint-config": "1.1.10"
   }
