@@ -3,7 +3,10 @@
  */
 class Greeting {
   /**
+   * Sets the name that the user typed in to the form.
    *
+   * @param {string} input - The name the user gave.
+   * @returns
    */
   setName (input) {
     const name = input.value
@@ -11,7 +14,10 @@ class Greeting {
   }
 
   /**
+   * Writes the greeting to the user.
    *
+   * @param name
+   * @returns
    */
   showGreeting (name) {
     // Just printing the name to start with.
@@ -20,7 +26,9 @@ class Greeting {
   }
 
   /**
+   * Translates a string into robber language.
    *
+   * @param {string} name - The set name.
    */
   convertToRobberLanguage (name) {
     const vowels = 'aeiouåäö'

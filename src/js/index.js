@@ -1,7 +1,7 @@
 import Greeting from './greeting.js'
 
 // Collects the name from HTML form
-const input = document.querySelector('#name')
+const input = document.querySelector('#nameInput')
 
 // New instance of Greeting class
 const greeting = new Greeting()

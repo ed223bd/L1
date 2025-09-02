@@ -10,18 +10,21 @@
 </head>
 
 <body>
-  <div>
-    <label for="name">Enter your name: </label>
-    <input type="text" id="name" placeholder="Your name">
-    <button id="nameButton">OK</button>
+  <div class="mainBox">
+    <div>
+      <label for="name">Enter your name: </label>
+      <input type="text" id="nameInput" placeholder="Your name">
+      <button id="nameButton">OK</button>
+    </div>
+
+    <div class="greetingBox">
+      <!-- Shows the message from convertToGreeting method -->
+      <p></p>
+    </div>
+
+    <script type="module" src="js/index.js"></script>
   </div>
 
-  <div class="greetingBox">
-    <!-- Shows the message from convertToGreeting method --> 
-    <p></p>
-  </div>
-
-  <script type="module" src="js/index.js"></script>
 </body>
 
 </html>
