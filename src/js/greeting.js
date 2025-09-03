@@ -6,11 +6,10 @@ class Greeting {
   /**
    * Sets the name that the user typed in to the form.
    *
-   * @param {string} input - The name the user gave.
+   * @param {string} name - The name the user gave.
    * @returns {string} The message in robber language.
    */
-  setName (input) {
-    const name = input.value
+  setName (name) {
     return this.showGreeting(name)
   }
 
@@ -21,11 +20,8 @@ class Greeting {
    * @returns {string} The complete message, using the robber language name.
    */
   showGreeting (name) {
-    // Just printing the name to start with.
-    console.log(name)
-    // return `Hello ${name}`
     const robberName = this.convertToRobberLanguage(name)
-    return `Hello! ${robberName}`
+    return `Hey! Get out of here ${robberName}. This is my site!`
   }
 
   /**
@@ -35,7 +31,6 @@ class Greeting {
    * @returns {string} The converted robber language name.
    */
   convertToRobberLanguage (name) {
-    console.log('convert called')
     const isConsonants = 'bcdfghjklmnpqrstvwxz'
     const isConsonantsCapital = 'BCDFGHJKLMNPQRSTVWXZ'
     let newName = ''
@@ -44,6 +39,8 @@ class Greeting {
       if (isConsonants.includes(char)) {
         newName += (char + 'o' + char)
       } else if (isConsonantsCapital.includes(char)) {
+        // If there is an uppercase letter, only the first should be uppercase.
+        // The next one should be lowercase.
         const smallChar = char.toLowerCase()
         newName += (char + 'o' + smallChar)
       } else {

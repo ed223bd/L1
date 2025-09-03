@@ -10,7 +10,10 @@ const greeting = new Greeting()
 const button = document.querySelector('#nameButton')
 button.addEventListener('click', (event) => {
   console.log('Button clicked!')
-  const message = greeting.setName(input)
-  const output = document.querySelector('.greetingBox')
+  const message = greeting.setName(input.value)
+
+  const output = document.querySelector('#greetingText')
   output.textContent = message
+  // Makes greetingbox visible
+  document.querySelector('.greetingBox').style.display = 'flex'
 })
