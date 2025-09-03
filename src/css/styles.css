@@ -1,28 +1,30 @@
 body {
-    background-color: rgb(196, 196, 248);
+  background-color: rgb(220, 220, 253);
 }
 
 .mainBox {
-    margin: 20px;
-    background-color: rgb(210, 249, 236);
-    height: fit-content;
-    max-width: fit-content;
-    padding: 30px;
-    border-radius: 10px;
+  margin: 40px;
+  background-color: rgb(210, 249, 236);
+  height: fit-content;
+  max-width: fit-content;
+  padding: 30px;
+  border-radius: 10px;
+  border: double 10px;
+  border-color: aliceblue;
 }
 
 .greetingBox {
-    margin-top: 20px;
-    display: hidden;
-    /* To keep white color on input background  */
-    transition: 0s;
+  margin-top: 20px;
+  display: hidden;
+  /* To keep white color on input background  */
+  transition: 0s;
 }
 
 #nameInput {
-    background-color: rgb(255, 255, 255);
+  background-color: rgb(255, 255, 255);
 }
 
 #nameButton {
-    background-color: rgb(212, 212, 244);
-    border-radius: 10px;
+  background-color: rgb(212, 212, 244);
+  border-radius: 10px;
 }
