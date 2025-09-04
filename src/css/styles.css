@@ -3,33 +3,48 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  font-family: cursive;
 }
 
 .mainBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   margin: 140px;
-  background-color: rgb(248, 248, 248);
+  background-color: rgb(255, 255, 255);
   height: fit-content;
-  max-width: fit-content;
+  min-width: 450px;
   padding: 30px;
   border-radius: 10px;
   border: double 10px;
   border-color: rgb(2, 82, 153);
-  
+  position: relative;
 }
 
 .greetingBox {
   margin-top: 20px;
   display: none;
-  align-items: center;
-  justify-content: center;
+  min-height: 100px;
+  text-align: left;
+}
+
+#greetingText {
+    max-width: 200px;
+    white-space: pre-line;
 }
 
 #burglarImage {
-  margin-top: 60px;
-  background-image: url(../img/burglar.png);
+  display: none;
+  margin-top: 20px;
+  background-image: url(../img/small_robber.png);
   background-size: cover;
+  background-repeat: no-repeat;
   height: 150px;
   width: 150px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
 }
 
 #nameInput {

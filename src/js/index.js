@@ -16,4 +16,5 @@ button.addEventListener('click', (event) => {
   output.textContent = message
   // Makes greetingbox visible
   document.querySelector('.greetingBox').style.display = 'flex'
+  document.querySelector('#burglarImage').style.display = 'flex'
 })

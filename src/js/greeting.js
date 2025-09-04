@@ -21,7 +21,7 @@ class Greeting {
    */
   showGreeting (name) {
     const robberName = this.convertToRobberLanguage(name)
-    return `Hey! Get out of here ${robberName}. This is my site!`
+    return `Get out of here ${robberName}.\nThis is my site!`
   }
 
   /**
